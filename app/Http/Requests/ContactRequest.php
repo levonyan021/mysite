@@ -25,14 +25,20 @@ class ContactRequest extends FormRequest
     public function rules()
     {
         return [
-            'email' => 'required|email'
+            'email' => 'required|email',
+            'name' => 'required|min: 2|max: 30',
+            'message' => 'required|min: 5|max: 30'
         ];
     }
 
     public function messages()
     {
       return [
-        'email' => 'Անպայման գրել էլեկտրոնային փոստի հասցեն'
+        'email.email' => 'Անպայման գրել էլեկտրոնային փոստի հասցեն',
+        'email.required' => 'Անպայման գրել էլեկտրոնային փոստի հասցեն',
+        'name.required' => 'Օգտատիրոջ անվան դաշտը պարտադիր լրացված պետք է լինի',
+        'message.required' => 'Նամակի դաշտը պետք է լինի լրացված',
+        'message.min' => 'Նամակի դաշտը շատ կարճ է'
       ];
     }
 }

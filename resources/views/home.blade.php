@@ -13,3 +13,8 @@
 @parent
 <p>Дополнительный текст</p>
 @endsection
+
+
+@section('title-block')
+Welcome
+@endsection

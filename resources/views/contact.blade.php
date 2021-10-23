@@ -20,6 +20,7 @@
       <input type="text" name="name" placeholder="Введите имя" id='name' class="form-control">
     </div>
 
+
     <div class="form-group col-5">
       <label for="email">Введите email</label>
       <input type="text" name="email" placeholder="Введите email" id='email' class="form-control">
@@ -27,7 +28,7 @@
 
     <div class="form-group col-5">
       <label for="massege">Введите massege</label>
-      <input type="text" name="massege" placeholder="Введите massege" id='massege' class="form-control">
+      <input type="text" name="message" placeholder="Введите massege" id='massege' class="form-control">
     </div>
 
     <button type="submit" class="btn btn-success mt-2">Submit!</button>
@@ -37,4 +38,8 @@
 @section('aside')
 @parent
 <p>Այստեղ կարող է լինել Ձեր գովազդը</p>
+@endsection
+
+@section('title-block')
+Contacts
 @endsection
