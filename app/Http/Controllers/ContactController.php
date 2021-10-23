@@ -1,15 +1,16 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Models\Contact;
 use Illuminate\Http\Request;
+use App\Http\Requests\ContactRequest;
 
 class ContactController extends Controller
 {
 
-    public function submit(Request $req)
+    public function submit(ContactRequest $req)
     {
-      dd($req->input('subject'));
+    //
     }
 
 };
